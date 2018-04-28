@@ -149,7 +149,7 @@ public class SnsController {
            // credentials = new ProfileCredentialsProvider().getCredentials();
         	
         	// This is load the credentials via the aws key and secret 
-        	credentials = new BasicAWSCredentials("AKIAJASBUOVVL5UCQ35Q", "iX6nQORSSD/4iNwH4LyE2TOeaw2mGrJIFfLopKTz"); 	
+        	credentials = new BasicAWSCredentials("xxx", "ixx"); 	
         	
         } catch (Exception e) {
             throw new AmazonClientException(
@@ -393,7 +393,7 @@ public class SnsController {
 	    
 	    	//https://cloudacademy.com/blog/everything-you-ever-wanted-to-know-about-amazon-kinesis-firehose/
 	    	AWSCredentials credentials = null;
-	       	credentials = new BasicAWSCredentials("AKIAJASBUOVVL5UCQ35Q", "iX6nQORSSD/4iNwH4LyE2TOeaw2mGrJIFfLopKTz");
+	       	credentials = new BasicAWSCredentials("xx", "xx/xx");
 	       	AmazonKinesisFirehose client = AmazonKinesisFirehoseClientBuilder.standard().withCredentials( new AWSStaticCredentialsProvider(credentials)).build();
 
 	    	Record record = new Record();
